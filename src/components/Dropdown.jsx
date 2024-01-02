@@ -2,11 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
+
 export default function HoverDropdown() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sm:flex hidden">
+    <div className="sm:flex font-fira-sans hidden">
       <div onMouseLeave={() => setOpen(false)} className="relative">
         <button
           onMouseOver={() => setOpen(true)}

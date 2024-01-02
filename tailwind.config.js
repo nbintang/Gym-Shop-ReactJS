@@ -8,6 +8,9 @@ module.exports = {
         'nova' : ['Nova Square', 'sans-serif'],
         'fira-sans' : ['Fira Sans', 'sans-serif']
       },
+      colors : {
+        'white-cream' : '#EDF7FA',
+      },
     },
   },
   plugins: [require("tw-elements-react/dist/plugin.cjs")],

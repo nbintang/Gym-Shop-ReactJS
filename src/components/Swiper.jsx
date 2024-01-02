@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import React from "react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,7 +11,7 @@ import "swiper/css/pagination";
 
 export default () => {
   return (
-    <Swiper
+<Swiper
       modules={[Navigation, Pagination, Autoplay]}
       slidesPerView={1}
       loop={true}
@@ -20,6 +21,7 @@ export default () => {
       simulateTouch={false}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
+      className="relative block"
     >
       <SwiperSlide>
         <img src="assets/img/imgwallpaper/2.jpg" alt="" />
