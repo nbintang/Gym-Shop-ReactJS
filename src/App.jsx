@@ -6,12 +6,14 @@ import Navbar from "./components/Navbar";
 import Swiper from "./components/Swiper";
 import Dropdown from "./components/Dropdown";
 import Home from "./pages/Home";
+import Support from "./components/Support";
 
 export default function App() {
   return (
     <Router>
       <Navbar></Navbar>
       <Home/>
+      <Support/>
 
 
 
