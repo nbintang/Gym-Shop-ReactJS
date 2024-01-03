@@ -1,16 +1,17 @@
 import React from "react";
 
-export default function About(){
-    return <>
-    <div>
-    <div class="purpose flex w-full justify-center gap-4 ">
-          <div class="wrapper">
-            <p class="font-archivo w-96 text-7xl text-right">
+export default function About() {
+  return (
+    <>
+      <div className="flex ">
+        <div class="purpose flex w-full justify-center flex-wrap gap-5 ">
+          <div class="wrapper ">
+            <p class="font-archivo w-96 text-4xl sm:text-7xl text-left sm:text-right">
               WHAT ARE WE BUILDING FOR?
             </p>
           </div>
-          <div class="desc w-[500px]">
-            <p class="font-nova text-2xl font-thin text-left">
+          <div class="desc w-[350px] sm:w-[400px]">
+            <p class="font-nova sm:text-xl text-lg leading-8 font-thin text-right sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Recusandae amet quisquam facere. Excepturi fugiat, soluta tempore
               vitae quasi libero veritatis? Lorem ipsum dolor sit amet
@@ -23,6 +24,7 @@ export default function About(){
             </p>
           </div>
         </div>
-    </div>
+      </div>
     </>
+  );
 }

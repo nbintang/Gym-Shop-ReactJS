@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Hamburger from "./Hamburger";
 import Search from "./Search";
 import Button from "./Button";
 import Dropdown from "./Dropdown";
@@ -26,7 +26,7 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faCartShopping} />
             </button>
             <Dropdown />
-
+            <Hamburger/>
             <Button />
           </div>
         </nav>

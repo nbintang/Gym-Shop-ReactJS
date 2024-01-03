@@ -6,7 +6,9 @@ import Navbar from "./components/Navbar";
 import Swiper from "./components/Swiper";
 import Dropdown from "./components/Dropdown";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Support from "./components/Support";
+import Shop from "./pages/Shop";
 
 export default function App() {
   return (
@@ -14,7 +16,8 @@ export default function App() {
       <Navbar></Navbar>
       <Home/>
       <Support/>
-
+      <About/>
+      <Shop/>
 
 
       {/* A <Switch> looks through its children <Route>s and
