@@ -18,10 +18,6 @@ export default () => {
       loop={true}
       autoplay={{
         delay: 3000,
-        disableOnInteraction: true
-      }}
-      onTouchStart={() => {
-        return false
       }}
       simulateTouch={false}
       onSlideChange={() => console.log("slide change")}
