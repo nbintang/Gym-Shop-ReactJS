@@ -14,11 +14,10 @@ export default function App() {
   return (
     <Router>
       <Navbar></Navbar>
-      <Home/>
-      <Support/>
-      <About/>
-      <Shop/>
-
+      <Home />
+      <Support />
+      <About />
+      {/* <Shop /> */}
 
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}

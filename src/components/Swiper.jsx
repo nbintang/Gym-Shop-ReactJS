@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
 export default () => {
   return (
 <Swiper
@@ -23,17 +24,18 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       className="relative block"
     >
+
       <SwiperSlide>
-        <img src="assets/img/imgwallpaper/2.jpg" alt="" />
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/1.jpg')"}}></div>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="" src="assets/img/imgwallpaper/1.jpg" alt="" />
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/2.jpg')"}}></div>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="" src="assets/img/imgwallpaper/3.jpg" alt="" />
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/3.jpg')"}}></div>
       </SwiperSlide>
       <SwiperSlide>
-        <img className="w-full" src="assets/img/imgwallpaper/4.jpg" alt="" />
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/4.jpg')"}}></div>
       </SwiperSlide>
     </Swiper>
   );

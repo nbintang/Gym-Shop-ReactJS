@@ -6,11 +6,11 @@ export default function About() {
       <div className="flex ">
         <div class="purpose flex w-full justify-center flex-wrap gap-5 ">
           <div class="wrapper ">
-            <p class="font-archivo w-96 text-4xl sm:text-7xl text-left sm:text-right">
+            <p class="font-archivo w-[320px] text-4xl sm:text-7xl text-left sm:text-right">
               WHAT ARE WE BUILDING FOR?
             </p>
           </div>
-          <div class="desc w-[350px] sm:w-[400px]">
+          <div class="desc w-[320px] sm:w-[400px]">
             <p class="font-nova sm:text-xl text-lg leading-8 font-thin text-right sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Recusandae amet quisquam facere. Excepturi fugiat, soluta tempore
