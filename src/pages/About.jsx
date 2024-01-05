@@ -6,7 +6,7 @@ export default function About() {
       <div className="flex ">
         <div className="purpose flex w-full justify-center flex-wrap gap-5 ">
           <div className="wrapper ">
-            <p className="font-archivo w-[400px] text-4xl sm:text-7xl text-center sm:text-right">
+            <p className="font-archivo sm:w-[400px] w-[300px] text-4xl sm:text-7xl text-center sm:text-right">
               WHAT ARE WE BUILDING FOR?
             </p>
           </div>
