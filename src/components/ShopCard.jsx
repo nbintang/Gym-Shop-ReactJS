@@ -3,8 +3,8 @@ import React from "react";
 export default function ShopCard() {
   return (
     <>
-      <div className="men1 w-52 border hover:bg-gray-100 shadow-md pb-5 cursor-pointer">
-        <div className="image hover:opacity-80r">
+      <div className="men1 w-52 border hover:bg-gray-100 rounded active:bg-gray-200 shadow pb-5 cursor-pointer">
+        <div className="image hover:opacity-80">
           <img src="assets/img/clothes/3men.jpg" alt="" />
         </div>
         <div className="details flex flex-col space-y-3  p-2">
@@ -25,7 +25,7 @@ export default function ShopCard() {
             </div>
             <p className="text-lg hover:underline font-archivo">Nike</p>
           </div>
-          <div className="desc leading-7 font-fira-sans">
+          <div className="desc leading-7 font-fira-sans flex text-wrap">
             <p>Weight Lifting Shirt</p>
           </div>
           <div>

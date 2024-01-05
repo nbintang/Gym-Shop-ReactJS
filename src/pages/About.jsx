@@ -4,14 +4,14 @@ export default function About() {
   return (
     <>
       <div className="flex ">
-        <div class="purpose flex w-full justify-center flex-wrap gap-5 ">
-          <div class="wrapper ">
-            <p class="font-archivo w-[320px] text-4xl sm:text-7xl text-left sm:text-right">
+        <div className="purpose flex w-full justify-center flex-wrap gap-5 ">
+          <div className="wrapper ">
+            <p className="font-archivo w-[400px] text-4xl sm:text-7xl text-center sm:text-right">
               WHAT ARE WE BUILDING FOR?
             </p>
           </div>
-          <div class="desc w-[320px] sm:w-[400px]">
-            <p class="font-nova sm:text-xl text-lg leading-8 font-thin text-right sm:text-left">
+          <div className="desc w-[320px] sm:w-[400px]">
+            <p className="font-nova sm:text-xl text-lg leading-8 font-thin text-center sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Recusandae amet quisquam facere. Excepturi fugiat, soluta tempore
               vitae quasi libero veritatis? Lorem ipsum dolor sit amet
