@@ -3,8 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="flex ">
-        <div className="purpose flex w-full justify-center flex-wrap gap-5 ">
+      <div className="flex h-screen ">
+        <div className="purpose flex w-full items-center justify-center flex-wrap gap-x-4 ">
           <div className="wrapper ">
             <p className="font-archivo sm:w-[400px] w-[300px] text-4xl sm:text-7xl text-center sm:text-right">
               WHAT ARE WE BUILDING FOR?

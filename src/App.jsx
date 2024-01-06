@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Support from "./components/Support";
 import Shop from "./pages/Shop";
+import Contact from "./pages/Contact";
+
 
 export default function App() {
   return (
@@ -18,7 +20,10 @@ export default function App() {
       <Support />
       <About />
 
+
         <Shop />
+
+        <Contact/>
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       {/* <Switch>

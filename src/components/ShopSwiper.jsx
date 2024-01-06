@@ -6,7 +6,7 @@ import { Pagination, Navigation } from "swiper/modules";
 export default function ShopSwiper() {
   return (
     <>
-      <div className="text-center flex justify-evenly flex-col">
+      <div className="text-center flex justify-evenly h-screen flex-col">
         <div className=" w-full flex justify-center">
           <div className="flex justify-center w-[80%] bg-gray-50 p-5 border rounded">
             <Swiper
