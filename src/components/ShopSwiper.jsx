@@ -31,6 +31,7 @@ export default function ShopSwiper() {
 
                 640: {
                   slidesPerView: 2,
+                  spaceBetween: 0,
                 },
               }}
             >
