@@ -5,7 +5,7 @@ import Contactlogin from "../components/ContactLogin";
 export default function Contact() {
   return (
     <>
-      <div className=" h-[1000px] flex items-center font-fira-sans flex-col  justify-center">
+      <div className=" h-[1000px] mt-10 flex items-center font-fira-sans flex-col  justify-center">
       <div className="mb-7">
           <h1 className="font-archivo text-4xl">Contact Us</h1>
         </div>
