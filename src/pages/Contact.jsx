@@ -6,11 +6,13 @@ export default function Contact() {
   return (
     <>
       <div className=" h-[1000px] flex items-center font-fira-sans flex-col  justify-center">
-        <div className="mb-7">
+      <div className="mb-7">
           <h1 className="font-archivo text-4xl">Contact Us</h1>
         </div>
+<div className="border-2 min-w-0 rounded border-black p-8 border-solid ">
+
         <div className=" h-96 flex flex-col justify-between">
-          <div className="flex gap-3 w-96 min-w-32 flex-col text-lg">
+          <div className="flex gap-3  flex-col text-lg">
             <label htmlFor="username">Username</label>
             <input
             className="bg-gray-50  h-8  py-4"
@@ -42,6 +44,7 @@ export default function Contact() {
               <Contactlogin/>
               <Contactlogin/>
               <Contactlogin/>
+              
             </ul>
           </div>
           <div className=" flex justify-center mr-3 cursor-pointer sm:justify-end items-center mt-3 ">
@@ -50,7 +53,9 @@ export default function Contact() {
             </button>
           </div>
         </div>
+</div>
       </div>
     </>
   );
 }
+
