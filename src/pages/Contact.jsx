@@ -1,18 +1,19 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Contactlogin from "../components/ContactLogin";
 
 export default function Contact() {
   return (
     <>
-      <div className=" h-[1000px] max-w-full flex items-center font-fira-sans flex-col  justify-center">
+      <div className=" h-[1000px] flex items-center font-fira-sans flex-col  justify-center">
         <div className="mb-7">
           <h1 className="font-archivo text-4xl">Contact Us</h1>
         </div>
         <div className=" h-96 flex flex-col justify-between">
-          <div className="flex gap-3 flex-col w-96 text-lg">
+          <div className="flex gap-3 w-96 min-w-32 flex-col text-lg">
             <label htmlFor="username">Username</label>
             <input
-            className="bg-gray-50 h-8 block py-4"
+            className="bg-gray-50  h-8  py-4"
               type="username"
               name="username"
               id="username"
@@ -21,7 +22,7 @@ export default function Contact() {
             />
             <label htmlFor="password">Password</label>
             <input
-            className="bg-gray-50 h-8"
+            className="bg-gray h-8"
               type="password"
               name="password"
               id="password"
@@ -31,25 +32,16 @@ export default function Contact() {
             <label htmlFor="message">Send Your Message</label>
             <input
               type="message"
-              className="w-full bg-gray-50 h-40"
+              placeholder="Send Message"
+              className="w-full text-center bg-gray-50 h-40"
               required
             />
           </div>
           <div className="mt-4">
             <ul className=" flex w-full justify-around flex-wrap">
-              <li className="border border-black hover:bg-gray-50 active:bg-gray-100 flex justify-center w-32 h-7 cursor-pointer rounded">
-                <img src="assets/img/brand/google.svg" className="w-5" alt="" />
-              </li>
-              <li className="border border-black hover:bg-gray-50 active:bg-gray-100 flex justify-center w-32 h-7 cursor-pointer  rounded">
-                <img
-                  src="assets/img/brand/square-facebook.svg"
-                  className="w-5"
-                  alt=""
-                />
-              </li>
-              <li className="border border-black hover:bg-gray-50 active:bg-gray-100 flex justify-center w-32 h-7 cursor-pointer  rounded">
-                <img src="assets/img/brand/github.svg" className="w-5" alt="" />
-              </li>
+              <Contactlogin/>
+              <Contactlogin/>
+              <Contactlogin/>
             </ul>
           </div>
           <div className=" flex justify-center mr-3 cursor-pointer sm:justify-end items-center mt-3 ">
