@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer(){
   return <>
-  <footer className="flex h-96 flex-wrap w-full items-center justify-between px-7 bg-black text-white">
+  <footer className="flex h-screen sm:h-96 flex-wrap w-full items-center justify-between px-7 bg-black text-white">
     <div>
       <ul className="space-y-2 [&>*:hover]:underline [&>*:hover]:text-gray-600 [&>*]:transition-all [&>*]:cursor-pointer">
         <li>Home</li>
@@ -10,7 +10,7 @@ export default function Footer(){
         <li>Contact</li>
         <li>Service</li>
         <li>Product</li>
-        <li>Service</li>
+        <li>Servicfwwfe</li>
         <li>Product</li>
         <li>Service</li>
         <li>Product</li>
@@ -24,14 +24,14 @@ export default function Footer(){
         <li>Service</li>
         <li>Pages</li>
         <li>Contact</li>
-        <li>Service</li>
-        <li>Product</li>
+        <li>Servicefsefsefs</li>
+        <li>Prsfsefsoduct</li>
       </ul>
     </div>
     <div>
       <ul className="space-y-2 [&>*:hover]:underline [&>*:hover]:text-gray-600 [&>*]:transition-all [&>*]:cursor-pointer">
         <li>Home</li>
-        <li>Pages</li>
+        <li>Pagfsefes</li>
         <li>Contact</li>
         <li>Service</li>
         <li>Pages</li>
@@ -43,10 +43,10 @@ export default function Footer(){
     <div>
       <ul className="space-y-2  [&>*:hover]:underline [&>*:hover]:text-gray-600 [&>*]:transition-all [&>*]:cursor-pointer">
         <li>Home</li>
-        <li>Pages</li>
-        <li>Contact</li>
+        <li>Pasvdvfesges</li>
+        <li>Contsfeact</li>
         <li>Service</li>
-        <li>Product</li>
+        <li>Prodfsefsuct</li>
       </ul>
     </div>
 

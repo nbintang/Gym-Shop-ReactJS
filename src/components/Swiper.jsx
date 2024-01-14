@@ -26,16 +26,16 @@ export default () => {
     >
 
       <SwiperSlide>
-        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/1.jpg')"}}></div>
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/gif/gym.gif')"}}></div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/2.jpg')"}}></div>
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/gif/run.gif')"}}></div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/3.jpg')"}}></div>
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/gif/swim.gif')"}}></div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/img/imgwallpaper/4.jpg')"}}></div>
+        <div className="bg-cover w-full h-screen bg-center" style={{backgroundImage: "url('assets/gif/basket.gif')"}}></div>
       </SwiperSlide>
     </Swiper>
   );
