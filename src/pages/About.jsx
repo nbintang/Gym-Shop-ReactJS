@@ -11,7 +11,7 @@ export default function About() {
             </p>
           </div>
           <div className="desc w-[320px] sm:w-[400px]">
-            <p className="font-nova sm:text-xl text-lg leading-8 font-thin text-center sm:text-left">
+            <p className="font-nova sm:text-xl text-lg leading-6 font-thin text-center sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Recusandae amet quisquam facere. Excepturi fugiat, soluta tempore
               vitae quasi libero veritatis? Lorem ipsum dolor sit amet

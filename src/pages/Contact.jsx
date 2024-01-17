@@ -5,6 +5,7 @@ export default function Contact() {
   return (
     <>
       <div className=" h-[1000px] max-w-full flex items-center font-fira-sans flex-col  justify-center">
+        <div className="border rounded border-black p-3">
         <div className="mb-7">
           <h1 className="font-archivo text-4xl">Contact Us</h1>
         </div>
@@ -37,7 +38,7 @@ export default function Contact() {
           </div>
           <div className="mt-4">
             <ul className=" flex w-full justify-around flex-wrap">
-              <li className="border border-black hover:bg-gray-50 active:bg-gray-100 flex justify-center w-32 h-7 cursor-pointer rounded">
+              <li className="border border-black hover:bg-gray-50 active:bg-gray-100 flex justify-center cursor-pointer rounded">
                 <img src="assets/img/brand/google.svg" className="w-5" alt="" />
               </li>
               <li className="border border-black hover:bg-gray-50 active:bg-gray-100 flex justify-center w-32 h-7 cursor-pointer  rounded">
@@ -57,6 +58,7 @@ export default function Contact() {
               Send
             </button>
           </div>
+        </div>
         </div>
       </div>
     </>
