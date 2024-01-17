@@ -3,15 +3,15 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="flex h-screen ">
-        <div className="purpose flex w-full items-center justify-center flex-wrap gap-x-4 ">
-          <div className="wrapper ">
-            <p className="font-archivo sm:w-[400px] w-[300px] text-4xl sm:text-7xl text-center sm:text-right">
+      <div className="flex h-[600px] ">
+        <div className="purpose flex w-full justify-center flex-wrap gap-x-4 ">
+          <div className="wrapper  ">
+            <p className="font-archivo sm:w-[400px] w-[300px] text-4xl md:text-7xl sm:text-6xl text-center sm:text-right">
               WHAT ARE WE BUILDING FOR?
             </p>
           </div>
           <div className="desc w-[320px] sm:w-[400px]">
-            <p className="font-nova sm:text-xl text-lg leading-6 font-thin text-center sm:text-left">
+            <p className="font-nova sm:text-xl md:text-lg text-lg leading-6 font-thin text-center sm:text-left">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Recusandae amet quisquam facere. Excepturi fugiat, soluta tempore
               vitae quasi libero veritatis? Lorem ipsum dolor sit amet

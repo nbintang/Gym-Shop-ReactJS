@@ -1,14 +1,35 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHamburger } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hamburger() {
-  const [open, setOpen] = useState(false);
+  const [ open, setOpen] = useState(false)
+  
+  // useEffect(() => {
+  //   setOpen(false);
+  // }, [])
+
+  const outsideClick = (e) => {
+    if(open && !e.target.closest(".navbar")) {
+      setOpen(false)
+    }
+  };
+
+  // const toggle = () => {
+  //   setOpen(!open);
+  // };
+
+  useEffect(() => {
+    document.addEventListener("click", outsideClick)
+    return () => {
+      document.removeEventListener('click', outsideClick)
+    };
+  }, [open])
 
   return (
     <>
-      <div className=" block sm:hidden">
+      <div className=" navbar block sm:hidden">
         <div
           className=" border text-lg p-2 z hover:bg-gray-100 active:bg-gray-300 rounded justify-center flex items-center "
           onClick={() => setOpen(!open)}
