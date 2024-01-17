@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="w-full">
         <Swiper />
-        <div className="absolute md:top-80 lg:top-96 text-[#EDF7FA] top-60  z-50 w-full text-center">
+        <div className="absolute md:top-80 lg:top-96 text-[#EDF7FA] top-60 z-30  w-full text-center">
           <h1 className="md:text-8xl text-5xl font-archivo">BE THE STRONGEST</h1>
           <button className="text-3xl underline hover:text-black font-archivo transition-all duration-100 mt-2">JOIN NOW</button>
         </div>
