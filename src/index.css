@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .changed-placeholder::placeholder {
+        padding: 5px 12px;
+        margin:  5px;
+    };
+}
+

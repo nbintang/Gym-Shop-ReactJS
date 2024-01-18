@@ -11,6 +11,7 @@ module.exports = {
       colors : {
         'white-cream' : '#EDF7FA',
       },
+      
     },
   },
   plugins: [require("tw-elements-react/dist/plugin.cjs")],

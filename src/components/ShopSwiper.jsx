@@ -2,22 +2,35 @@ import React from "react";
 import ShopCard from "../components/ShopCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import { Scrollbar } from "swiper/modules";
+
 
 export default function ShopSwiper() {
   return (
     <>
       <div className="text-center flex justify-evenly h-[] flex-col">
         <div className=" w-full flex justify-center">
-          <div className="flex justify-center w-[80%] bg-gray-50 p-5 border rounded">
+          <div className="flex items-center w-[90%] overflow-visible overflow-x-auto bg-gray-50  border rounded h-72  ">
             <Swiper
-              modules={[Navigation, Pagination]}
+              modules={[Navigation, Pagination, Scrollbar]}
+              freeMode={true}
+              mousewheel= {
+                {
+                  releaseOnEdges: true
+                }
+              }
+              scrollbar={{ 
+                draggable: true,
+                dragSize: 24,
+                hide: false
+               }}
               breakpoints={{
                 1536: {
-                  slidesPerView: 6,
+                  slidesPerView: 5,
                   spaceBetween: 60,
                 },
                 1280: {
-                  slidesPerView: 5,
+                  slidesPerView: 4,
                   spaceBetween: 50,
                 },
                 1024: {
@@ -26,7 +39,7 @@ export default function ShopSwiper() {
                 },
                 768: {
                   slidesPerView: 3,
-                  spaceBetween: 30,
+                  spaceBetween: 12,
                 },
 
                 640: {
@@ -34,7 +47,7 @@ export default function ShopSwiper() {
                   spaceBetween: 0,
                 },
               }}
-            >
+            className="sm:[&>*]:block [&>*]:left-16 ">
               <SwiperSlide>
                 <ShopCard />
               </SwiperSlide>

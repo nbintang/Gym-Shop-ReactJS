@@ -3,9 +3,15 @@ import React from "react";
 export default function ShopCard() {
   return (
     <>
-      <div className="men1 w-52 border hover:bg-gray-100 hover:opacity-80 rounded active:bg-gray-200 shadow pb-5 cursor-pointer">
-        <div className="image ">
-          <img src="assets/img/clothes/3men.jpg" alt="" />
+      <div className="men1 w-52 border bg-white  hover:bg-gray-100 hover:opacity-80 rounded active:bg-gray-200 shadow cursor-pointer">
+        <div className="image flex justify-center p-2">
+          <div className=" border">
+            <img
+              src="assets/img/clothes/3men.jpg"
+              className="h-36 {sm:h-56}"
+              alt=""
+            />
+          </div>
         </div>
         <div className="details flex flex-col space-y-3  p-2">
           <div className="rating flex justify-between">
@@ -28,8 +34,7 @@ export default function ShopCard() {
           <div className="desc leading-7 font-fira-sans flex text-wrap">
             <p>Weight Lifting Shirt</p>
           </div>
-          <div>
-          </div>
+          <div></div>
         </div>
       </div>
     </>
