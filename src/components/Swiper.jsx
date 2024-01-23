@@ -10,6 +10,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 
+
+
+
+
 export default () => {
   return (
 <Swiper
@@ -20,9 +24,23 @@ export default () => {
         delay: 3000,
       }}
       simulateTouch={false}
+      onTouchStart={function(){
+
+    return false;
+
+      }}
+      scrollbar = {
+        {
+          hide: false,
+          draggable: true,
+          snapOnRelease:true
+        }
+      }
+      
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       className="relative block"
+      noSwipingClass="swiper-no-swiping"
     >
 
       <SwiperSlide>
