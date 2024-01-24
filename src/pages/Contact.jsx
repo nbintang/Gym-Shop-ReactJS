@@ -53,8 +53,7 @@ export default function Contact() {
                     <div className="mt-4">
                       <ul className=" flex w-full justify-around flex-wrap">
                         <Contactlogin />
-                        <Contactlogin />
-                        <Contactlogin />
+
                       </ul>
                     </div>
                     <div className=" flex justify-center mr-3 cursor-pointer sm:justify-end items-center mt-7 ">

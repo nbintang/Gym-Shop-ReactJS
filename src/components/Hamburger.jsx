@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Hamburger() {
   const [ open, setOpen] = useState(false)
@@ -46,7 +47,7 @@ export default function Hamburger() {
             >
               <a
                 className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-                href=""
+                
               >
                 Login
               </a>
@@ -58,7 +59,7 @@ export default function Hamburger() {
               </a>
               <a
                 className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-                href=""
+                href="#about"
               >
                 About
               </a>

@@ -6,7 +6,7 @@ export default function Shop() {
     <>
       <div className=" flex flex-col justify-between">
         <div className="h-28">
-          <h1 className=" text-center text-4xl font-archivo">OUR PRODUCT</h1>
+          <h1 className=" text-center text-2xl sm:text-4xl font-archivo">OUR PRODUCT</h1>
         </div>
         <div className=" flex flex-col h-screen ">
           <ShopSwiper />

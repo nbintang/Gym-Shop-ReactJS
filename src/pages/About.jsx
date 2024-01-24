@@ -3,10 +3,11 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div className="flex h-[600px] ">
+      <div className="flex h-[600px] "
+      id="about">
         <div className="purpose flex w-full justify-center flex-wrap gap-x-4 ">
           <div className="wrapper  ">
-            <p className="font-archivo sm:w-[400px] w-[300px] text-4xl md:text-7xl sm:text-6xl text-center sm:text-right">
+            <p className="font-archivo sm:w-[400px] w-[300px] text-3xl md:text-6xl sm:text-5xl text-center sm:text-right">
               WHAT ARE WE BUILDING FOR?
             </p>
           </div>

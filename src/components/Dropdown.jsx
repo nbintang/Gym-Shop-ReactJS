@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export default function HoverDropdown() {
@@ -48,7 +48,7 @@ export default function HoverDropdown() {
           </a>
           <a
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href=""
+            href="#about"
           >
             About
           </a>

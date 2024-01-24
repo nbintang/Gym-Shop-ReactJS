@@ -12,36 +12,26 @@ import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
-
-
-
 export default function App() {
   return (
     <Router>
       <Navbar></Navbar>
-      <Home />
-      <Support />
-      <About />
+  
+          <Home />
+  
+        <Support />
 
 
-        <Shop />
+          <About />
 
-        <Contact/>
+      <Shop />
 
-        <Footer/>
+      <Contact />
+
+      <Footer />
 
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-      {/* <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-          </Route>
-        </Switch> */}
     </Router>
   );
 }
