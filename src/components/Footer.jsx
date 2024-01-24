@@ -139,16 +139,16 @@ export default function Footer() {
   ];
   return (
     <>
-      <footer className="flex h-screen w-full sm:h-96 flex-col bg-black text-white p-4 sm:text-sm">
-        <div className="flex justify-between w-full flex-wrap">
+      <footer className="flex w-full sm:h-80 flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
+        <div className="flex justify-between gap-3 w-full flex-wrap">
           {footerList.map(({ title, list }) => {
             return (
               <>
                 <ul className="space-y-2">
-                  <li className="text-lg font-bold ">{title}</li>
+                  <li className="sm:text-xl text-lg font-bold ">{title}</li>
                   {list.map(({ title, href }) => {
                     return (
-                      <li className="hover:underline">
+                      <li className="hover:underline text-sm sm:text-md">
                         <a href={href}>
                           {title.charAt(0).toUpperCase() + title.slice(1)}
                         </a>
@@ -188,7 +188,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full flex justify-between border-t border-white bg-black text-white">
+        <div className="w-full flex mt-3 text-sm sm:text-md justify-between border-t border-white bg-black text-white">
           <h1>© All right Reserved || 2024</h1>
           <h1 className="font-fira-sans">BXntang</h1>
         </div>
