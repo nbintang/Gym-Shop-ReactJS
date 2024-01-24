@@ -72,7 +72,7 @@ export default function Footer() {
       ],
     },
     {
-      title: "my account",
+      title: "My Account",
       list: [
         {
           title: "sign in/register",
@@ -89,7 +89,7 @@ export default function Footer() {
       ],
     },
     {
-      title: "top searches",
+      title: "Top Searches",
       list: [
         {
           title: "stockists",
@@ -139,12 +139,12 @@ export default function Footer() {
   ];
   return (
     <>
-      <footer className="flex w-full sm:h-80 flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
+      <footer id="footer" className="flex w-full flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
         <div className="flex justify-between gap-3 w-full flex-wrap">
           {footerList.map(({ title, list }) => {
             return (
               <>
-                <ul className="space-y-2">
+                <ul className="space-y-3 ">
                   <li className="sm:text-xl text-lg font-bold ">{title}</li>
                   {list.map(({ title, href }) => {
                     return (
@@ -160,7 +160,7 @@ export default function Footer() {
             );
           })}
           <div className="flex flex-col w-56 gap-y-4">
-            <h1 className="text-lg font-bold">
+            <h1 className="sm:text-lg text-md font-bold">
               Sign Up & get 10% off your next order
             </h1>
             <input

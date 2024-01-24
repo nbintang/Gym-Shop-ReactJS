@@ -9,10 +9,10 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   return (
     <>
-      <header className="max-w-full p-4">
+      <header className="max-w-full p-4 bg-white">
         <nav className="flex items-center justify-between ">
           <div className="">
-            <a href="">
+            <a href="#home">
               <img
                 className="w-10"
                 src="https://cdn.gymshark.com/images/branding/gs-icon-black.svg"

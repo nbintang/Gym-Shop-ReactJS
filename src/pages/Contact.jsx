@@ -6,12 +6,12 @@ import Maps from "../components/Maps";
 export default function Contact() {
   return (
     <>
-      <div className=" h-[1000px]  ">
-        <div className=" h-screen max-w-full flex items-center font-fira-sans flex-col  justify-center">
+      <div className=" h-[900px] bg-gray-100 ">
+        <div id="contact" className=" h-screen  max-w-full flex items-center font-fira-sans flex-col  justify-center">
           <div className="flex gap-3 justify-center flex-wrap">
             <Maps />
             <div className="w-72 sm:w-96">
-              <div className=" flex items-center font-fira-sans flex-col  gap-7 rounded border-solid border-2 p-2">
+              <div className=" flex items-center font-fira-sans flex-col shadow  gap-7 rounded border-solid border border-black p-2">
                 <div className="">
                   <h1 className="font-archivo sm:text-2xl md:text-4xl text-xl">
                     Contact Us
@@ -53,7 +53,6 @@ export default function Contact() {
                     <div className="mt-4">
                       <ul className=" flex w-full justify-around flex-wrap">
                         <Contactlogin />
-
                       </ul>
                     </div>
                     <div className=" flex justify-center mr-3 cursor-pointer sm:justify-end items-center mt-7 ">

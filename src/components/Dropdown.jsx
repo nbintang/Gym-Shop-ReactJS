@@ -36,13 +36,13 @@ export default function HoverDropdown() {
         >
           <a
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href=""
+            href="#home"
           >
             Login
           </a>
           <a
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href=""
+            href="#home"
           >
             Home
           </a>
@@ -54,19 +54,19 @@ export default function HoverDropdown() {
           </a>
           <a
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href=""
+            href="#footer"
           >
             Services
           </a>
           <a
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href=""
+            href="#about"
           >
             Blog
           </a>
           <a
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href=""
+            href="#contact"
           >
             Contact
           </a>

@@ -47,7 +47,7 @@ export default function ShopSwiper() {
                   spaceBetween: 0,
                 },
               }}
-            className="sm:[&>*]:block [&>*]:left-16 ">
+            className=" [&>*]:left-16">
               <SwiperSlide>
                 <ShopCard />
               </SwiperSlide>
@@ -70,13 +70,7 @@ export default function ShopSwiper() {
                 <ShopCard />
               </SwiperSlide>
 
-              <SwiperSlide>
-                <ShopCard />
-              </SwiperSlide>
 
-              <SwiperSlide>
-                <ShopCard />
-              </SwiperSlide>
             </Swiper>
           </div>
         </div>
