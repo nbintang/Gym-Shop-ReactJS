@@ -11,7 +11,7 @@ export default function Home() {
             <span>BE</span> <span>THE</span>
           <span className="text-black underline decoration-black decoration-5">STRONGEST</span>
           </h1>
-          <article className="text-lg sm:text-xl font-fira-sans">
+          <article className="text-lg sm:text-xl font-fira-sans p-1">
             <p>Sign up and Get 50% off to get our new product and best product.</p>
           </article>
           <div className=" flex justify-center gap-3 [&>button]:shadow transition-all">

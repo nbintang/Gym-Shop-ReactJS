@@ -144,8 +144,9 @@ export default function Footer() {
           {footerList.map(({ title, list }) => {
             return (
               <>
-                <ul className="space-y-3 ">
+                <ul className=" ">
                   <li className="sm:text-xl text-lg font-bold ">{title}</li>
+                  <div className="space-y-3">
                   {list.map(({ title, href }) => {
                     return (
                       <li className="hover:underline text-sm sm:text-md">
@@ -155,6 +156,7 @@ export default function Footer() {
                       </li>
                     );
                   })}
+                  </div>
                 </ul>
               </>
             );
