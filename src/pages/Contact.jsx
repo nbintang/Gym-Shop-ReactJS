@@ -6,59 +6,65 @@ import Maps from "../components/Maps";
 export default function Contact() {
   return (
     <>
-      <div className=" h-[900px] bg-gray-100  border-t border-gray-800">
-        <div id="contact" className=" h-screen  max-w-full flex items-center font-fira-sans flex-col justify-end sm:justify-center ">
-          <div className="flex  justify-center flex-col sm:flex-row border  border-black rounded">
-            <Maps />
-            <div className="w-72  sm:w-96 flex ">
-              <div className=" flex  items-center font-fira-sans flex-col   gap-7 bg-white p-2">
-                <div className="">
-                  <h1 className="font-archivo sm:text-2xl md:text-4xl text-xl">
-                    Contact Us
-                  </h1>
+      <div className=" bg-gradient-to-t from-gray-100 to-white h-[1000px]  flex items-center justify-center">
+        <div id="contact" className="   font-fira-sans ">
+          <div className="  max-w-80 sm:max-w-96  md:max-w-full  rounded">
+            <div className="w-full rounded  border-2  border-solid border-black">
+              <div className="flex flex-wrap">
+                <div className=" sm:w-[400px] max-w-full">
+                  <Maps />
                 </div>
-                <div className=" min-w-0 rounded border p-2">
-                  <div className=" h-96 flex flex-col justify-between">
-                    <div className="flex gap-3  flex-col text-lg [&>input]:outline-none [&>*]:sm:text-lg  [&>*]:md:text-xl  [&>*]:text-md">
-                      <label htmlFor="username">Username</label>
-                      <input
-                        className="bg-gray-50 border changed-placeholder outline-none rounded-sm  h-8  py-4"
-                        type="username"
-                        name="username"
-                        id="username"
-                        placeholder="username"
-                        required
-                      />
-                      <label htmlFor="password">Password</label>
-                      <input
-                        className="bg-gray-50 border rounded-sm h-8 changed-placeholder"
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="password"
-                        required
-                      />
-                      <label htmlFor="message">Send Your Message</label>
-                      <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="10"
-                        type="message"
-                        placeholder="Send Message"
-                        className=" p-4 w-full border outline-none rounded-sm bg-gray-50 h-32 max-h-32"
-                        required
-                      />
+                <div className="  justify-center items-center flex flex-1">
+                  <div className=" flex justify-center w-full  items-center font-fira-sans flex-col   gap-7 bg-white p-2">
+                    <div className="">
+                      <h1 className="font-archivo sm:text-2xl md:text-4xl text-xl">
+                        Contact Us
+                      </h1>
                     </div>
-                    <div className="mt-4">
-                      <ul className=" flex w-full justify-around flex-wrap">
-                        <Contactlogin />
-                      </ul>
-                    </div>
-                    <div className=" flex justify-center mr-3 cursor-pointer sm:justify-end items-center mt-7 ">
-                      <button className="font-archivo border rounded border-black text-lg bg-black font-extralight text-white px-5">
-                        Send
-                      </button>
+                    <div className=" rounded max-h-[500px] border p-2">
+                      <div className=" h-[400px]  flex flex-col justify-between">
+                        <div className="flex gap-3  flex-col text-lg [&>input]:outline-none [&>*]:sm:text-lg  [&>*]:md:text-xl  [&>*]:text-md">
+                          <label htmlFor="username">Username</label>
+                          <input
+                            className="bg-gray-50 border changed-placeholder outline-none rounded-sm  h-8  py-4"
+                            type="username"
+                            name="username"
+                            id="username"
+                            placeholder="username"
+                            required
+                          />
+                          <label htmlFor="password">Password</label>
+                          <input
+                            className="bg-gray-50 border rounded-sm h-8 changed-placeholder"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="password"
+                            required
+                          />
+                          <label htmlFor="message">Send Your Message</label>
+                          <textarea
+                            name=""
+                            id=""
+                            cols="30"
+                            rows="10"
+                            type="message"
+                            placeholder="Send Message"
+                            className=" p-4 w-full border outline-none rounded-sm bg-gray-50 h-32 max-h-32"
+                            required
+                          />
+                        </div>
+                        <div className="h-96 flex items-center">
+                          <ul className=" flex w-full justify-around flex-wrap">
+                            <Contactlogin />
+                          </ul>
+                        </div>
+                        <div className=" flex justify-center cursor-pointer sm:justify-end items-center ">
+                          <button className="font-archivo border rounded border-black text-lg bg-black font-extralight text-white px-5">
+                            Send
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

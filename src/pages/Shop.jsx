@@ -5,7 +5,7 @@ export default function Shop() {
   return (
     <>
       <div id="product" className=" flex flex-col pb-5 justify-between ">
-        <div className="h-28">
+        <div className="">
           <h1 className=" text-center text-2xl sm:text-4xl font-archivo">
             OUR PRODUCT
           </h1>
@@ -23,7 +23,7 @@ export default function Shop() {
               </h1>
             </div>
           </div>
-          <ShopSwiper />
+          <ShopSwiper/>
         </div>
       </div>
     </>

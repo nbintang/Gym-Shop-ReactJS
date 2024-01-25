@@ -8,7 +8,7 @@ import { Scrollbar } from "swiper/modules";
 export default function ShopSwiper() {
   return (
     <>
-      <div className="text-center flex justify-evenly h-[] flex-col">
+      <div className="text-center flex justify-evenly flex-col">
         <div className=" w-full flex justify-center">
           <div className="flex items-center w-[90%] shadow-lg bg-gray-950 overflow-visible overflow-x-auto  border border-black rounded h-80  ">
             <Swiper
