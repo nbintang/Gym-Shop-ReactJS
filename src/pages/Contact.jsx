@@ -6,7 +6,7 @@ import Maps from "../components/Maps";
 export default function Contact() {
   return (
     <>
-      <div className=" h-[900px] bg-gray-100  ">
+      <div className=" h-[900px] bg-gray-100  border-t border-gray-800">
         <div id="contact" className=" h-screen  max-w-full flex items-center font-fira-sans flex-col justify-end sm:justify-center ">
           <div className="flex  justify-center flex-col sm:flex-row border  border-black rounded">
             <Maps />
