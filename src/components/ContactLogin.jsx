@@ -15,7 +15,7 @@ export default function Contactlogin() {
   return iconPath.map(({ icon }, index) => {
     return (
       <>
-        <li className="border border-black shadow hover:bg-gray-50 active:bg-gray-100 flex justify-center px-6 sm:px-9  h-7 cursor-pointer rounded">
+        <li className="border border-black shadow bg-white hover:bg-gray-50 active:bg-gray-100 flex justify-center px-6 sm:px-9  h-7 cursor-pointer rounded">
           {icon}
         </li>
         

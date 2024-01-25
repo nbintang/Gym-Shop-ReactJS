@@ -10,7 +10,7 @@ export default function ShopSwiper() {
     <>
       <div className="text-center flex justify-evenly h-[] flex-col">
         <div className=" w-full flex justify-center">
-          <div className="flex items-center w-[90%] overflow-visible overflow-x-auto bg-gray-50  border rounded h-72  ">
+          <div className="flex items-center w-[90%] shadow-lg bg-gray-950 overflow-visible overflow-x-auto  border border-black rounded h-80  ">
             <Swiper
               modules={[Navigation, Pagination, Scrollbar]}
               freeMode={true}

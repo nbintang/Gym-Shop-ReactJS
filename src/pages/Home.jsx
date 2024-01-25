@@ -16,12 +16,12 @@ export default function Home() {
           </article>
           <div className=" flex justify-center gap-3 [&>button]:shadow transition-all">
             <div className="text-xl   font-archivo mt-2">
-              <button className="bg-white text-black font-extralight px-4 py-2 rounded-full duration-150 hover:bg-gray-300 ">
+              <button className="bg-white text-black font-extralight px-4 py-2 rounded-full duration-150 hover:bg-gray-300 active:bg-gray-400 ">
                 SEE PRODUCT
               </button>
             </div>
             <div className="text-lg   font-archivo mt-2">
-              <button className="bg-black text-white font-extralight px-4 py-2 rounded-full  duration-150 hover:bg-gray-950 ">
+              <button className="bg-black text-white font-extralight px-4 py-2 rounded-full  duration-150 hover:bg-gray-950  active:text-gray-200 active:bg-gray-950">
                 JOIN NOW
               </button>
             </div>

@@ -6,12 +6,12 @@ import Maps from "../components/Maps";
 export default function Contact() {
   return (
     <>
-      <div className=" h-[900px] bg-gray-100 ">
-        <div id="contact" className=" h-screen  max-w-full flex items-center font-fira-sans flex-col  justify-center">
-          <div className="flex gap-3 justify-center flex-wrap">
+      <div className=" h-[900px] bg-gray-100  ">
+        <div id="contact" className=" h-screen  max-w-full flex items-center font-fira-sans flex-col justify-end sm:justify-center ">
+          <div className="flex  justify-center flex-col sm:flex-row border  border-black rounded">
             <Maps />
-            <div className="w-72 sm:w-96">
-              <div className=" flex items-center font-fira-sans flex-col shadow  gap-7 rounded border-solid border border-black p-2">
+            <div className="w-72  sm:w-96 flex ">
+              <div className=" flex  items-center font-fira-sans flex-col   gap-7 bg-white p-2">
                 <div className="">
                   <h1 className="font-archivo sm:text-2xl md:text-4xl text-xl">
                     Contact Us
@@ -46,7 +46,7 @@ export default function Contact() {
                         rows="10"
                         type="message"
                         placeholder="Send Message"
-                        className=" p-4 w-full border outline-none rounded-sm bg-gray-50 h-32 max-h-40"
+                        className=" p-4 w-full border outline-none rounded-sm bg-gray-50 h-32 max-h-32"
                         required
                       />
                     </div>
@@ -56,7 +56,7 @@ export default function Contact() {
                       </ul>
                     </div>
                     <div className=" flex justify-center mr-3 cursor-pointer sm:justify-end items-center mt-7 ">
-                      <button className="font-nova border rounded border-black text-lg bg-black text-white px-5">
+                      <button className="font-archivo border rounded border-black text-lg bg-black font-extralight text-white px-5">
                         Send
                       </button>
                     </div>
