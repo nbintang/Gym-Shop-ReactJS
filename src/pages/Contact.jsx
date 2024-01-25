@@ -11,7 +11,7 @@ export default function Contact() {
           <div className="  max-w-80 sm:max-w-96  md:max-w-full  rounded">
             <div className="w-full rounded  border-2  border-solid border-black">
               <div className="flex flex-wrap">
-                <div className=" sm:w-[400px] w-full">
+                <div className=" sm:w-[400px] w-full ">
                   <Maps />
                 </div>
                 <div className="  justify-center items-center flex flex-1">
