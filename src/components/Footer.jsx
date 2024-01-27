@@ -139,8 +139,8 @@ export default function Footer() {
   ];
   return (
     <>
-      <footer id="footer" className="flex w-full flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
-        <div className="flex justify-between gap-3 w-full flex-wrap">
+      <footer id="footer" className="flex w-full   flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
+        <div className="flex justify-between gap-y-3 gap-x-2 sm:max-w-[500px] max-w-96 md:max-w-full w-full flex-wrap">
           {footerList.map(({ title, list }) => {
             return (
               <>
