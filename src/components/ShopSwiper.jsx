@@ -3,21 +3,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import { Scrollbar } from "swiper/modules";
 import { useState, useEffect } from "react";
-import ShopCard from "./ShopCard";import Skeleton from "./Skeleton";
+import ShopCard from "./ShopCard";
+import Skeleton from "./Skeleton";
 
 export default function ShopSwiper() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-      setTimeout(() => {
-        setLoading(false)
-      }, 1700);
-    }, [])
+    setTimeout(() => {
+      setLoading(false);
+    }, 1700);
+  }, []);
 
-    const skeleton = () =>{
-      return loading ? <Skeleton/> : <ShopCard/>;
-    }
-    
+  const skeleton = () => {
+    return loading ? <Skeleton /> : <ShopCard />;
+  };
   return (
     <>
       <div className="text-center flex justify-evenly flex-col">
@@ -59,25 +59,11 @@ export default function ShopSwiper() {
               }}
               className=" [&>*]:left-16"
             >
-              <SwiperSlide>
-                {skeleton}
-              </SwiperSlide>
-              <SwiperSlide>
-                {skeleton}
-              </SwiperSlide>
-              <SwiperSlide>
-                {skeleton}
-              </SwiperSlide>
-              <SwiperSlide>
-                {skeleton}
-              </SwiperSlide>
-              <SwiperSlide>
-                {skeleton}
-              </SwiperSlide>
-              <SwiperSlide>
-                {skeleton}
-              </SwiperSlide>
-
+              <SwiperSlide>{skeleton}</SwiperSlide>
+              <SwiperSlide>{skeleton}</SwiperSlide>
+              <SwiperSlide>{skeleton}</SwiperSlide>
+              <SwiperSlide>{skeleton}</SwiperSlide>
+              <SwiperSlide>{skeleton}</SwiperSlide>
             </Swiper>
           </div>
         </div>

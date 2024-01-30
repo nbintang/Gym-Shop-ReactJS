@@ -3,6 +3,17 @@ import { useState } from "react";
 
 export default function ShopCard() {
   const [rotate, setRotate] = useState(false);
+  const shop = [
+    {
+      images: {
+        image: `${
+          rotate
+            ? "assets/img/clothes/backshirt.jpg"
+            : "assets/img/clothes/frontshirt.jpg"
+        }`,
+      },
+    }
+  ];
 
   return (
     <>
@@ -11,20 +22,17 @@ export default function ShopCard() {
         onMouseLeave={() => setRotate(false)}
         onMouseOver={() => setRotate(true)}
       >
-        <div
-          className="image flex justify-center p-2"
-        
-        >
+        <div className="image flex justify-center p-2">
           <div className="border">
-            <img
-              src={`${
-                rotate
-                  ? "assets/img/clothes/backshirt.jpg"
-                  : "assets/img/clothes/frontshirt.jpg"
-              }`}
-              alt=""
-              className={`h-36 w-36 object-cover {sm:h-56} rounded`}
-            />
+            {shop.map(({ images }) => {
+              return (
+                <img
+                  src={images.image}
+                  alt=""
+                  className={`h-36 w-36 object-cover {sm:h-56} rounded`}
+                />
+              );
+            })}
           </div>
         </div>
         <div className="details flex flex-col space-y-3  px-4">
