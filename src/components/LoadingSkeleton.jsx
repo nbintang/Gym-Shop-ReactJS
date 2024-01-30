@@ -9,7 +9,7 @@ export default function LoadingSkeleton(){
 useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 1000);
+    }, 1700);
   }, [])
 
   return <>

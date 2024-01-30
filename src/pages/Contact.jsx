@@ -9,7 +9,7 @@ export default function Contact() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
   return (
     <>
@@ -22,7 +22,7 @@ export default function Contact() {
             <div className="w-full rounded  border-2  border-solid border-black">
               <div className="flex flex-wrap">
                 <div className=" sm:w-[400px] w-full ">
-                 {loading ? <SkeletonMap/> : <Maps />}
+                  {loading ? <SkeletonMap /> : <Maps />}
                 </div>
                 <div className="  justify-center items-center flex flex-1">
                   <div className=" flex justify-center w-full  items-center font-fira-sans flex-col   gap-7 bg-white p-2">
@@ -87,10 +87,10 @@ export default function Contact() {
   );
 }
 
-function SkeletonMap(){
-  return <>
-  <div className="w-full h-full bg-gray-200">
-
-  </div>
-  </>
+function SkeletonMap() {
+  return (
+    <>
+      <div className="w-full animate-pulse h-full bg-gray-200"></div>
+    </>
+  );
 }

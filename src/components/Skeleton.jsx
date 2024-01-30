@@ -1,5 +1,4 @@
 import React from "react";
-import ShopCard from "./ShopCard";
 
 export default function Skeleton() {
   return (
