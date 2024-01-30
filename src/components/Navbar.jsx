@@ -5,11 +5,12 @@ import Search from "./Search";
 import Button from "./Button";
 import Dropdown from "./Dropdown";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <>
-      <header className="max-w-full p-4 bg-white">
+      <header className="max-w-full p-4 z-50 sticky top-0  bg-white">
         <nav className="flex items-center justify-between ">
           <div className="">
             <a href="#home">
@@ -20,13 +21,15 @@ export default function Navbar() {
               />
             </a>
           </div>
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 items-center">
             <Search></Search>
-            <button>
-              <FontAwesomeIcon icon={faCartShopping} />
-            </button>
+            <Link to="/error">
+              <button>
+                <FontAwesomeIcon icon={faCartShopping} />
+              </button>
+            </Link>
             <Dropdown />
-            <Hamburger/>
+            <Hamburger />
             <Button />
           </div>
         </nav>

@@ -3,7 +3,7 @@ import ShopCard from "../components/ShopCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import { Scrollbar } from "swiper/modules";
-
+import LoadingSkeleton from "./LoadingSkeleton";
 
 export default function ShopSwiper() {
   return (
@@ -14,16 +14,14 @@ export default function ShopSwiper() {
             <Swiper
               modules={[Navigation, Pagination, Scrollbar]}
               freeMode={true}
-              mousewheel= {
-                {
-                  releaseOnEdges: true
-                }
-              }
-              scrollbar={{ 
+              mousewheel={{
+                releaseOnEdges: true,
+              }}
+              scrollbar={{
                 draggable: true,
                 dragSize: 24,
-                hide: false
-               }}
+                hide: false,
+              }}
               breakpoints={{
                 1536: {
                   slidesPerView: 5,
@@ -47,30 +45,29 @@ export default function ShopSwiper() {
                   spaceBetween: 0,
                 },
               }}
-            className=" [&>*]:left-16">
+              className=" [&>*]:left-16"
+            >
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
               <SwiperSlide>
-                <ShopCard />
+                <LoadingSkeleton />
               </SwiperSlide>
-
-
             </Swiper>
           </div>
         </div>

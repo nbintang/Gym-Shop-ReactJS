@@ -1,37 +1,28 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Button from "./components/Button";
-import Navbar from "./components/Navbar";
-import Swiper from "./components/Swiper";
-import Dropdown from "./components/Dropdown";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Support from "./components/Support";
-import Shop from "./pages/Shop";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Error from "./pages/Error";
+import Main from "./Main";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 export default function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 500
+    });
+  },[]);
   return (
     <Router>
-      <Navbar></Navbar>
-  
-          <Home />
-  
-        <Support />
-
-
-          <About />
-
-      <Shop />
-
-      <Contact />
-
-      <Footer />
-
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <Switch>
+        <Route exact path="/">
+          <Main/>
+        </Route>
+        <Route path="*">
+          <Error/>
+        </Route>
+      </Switch>
     </Router>
   );
 }

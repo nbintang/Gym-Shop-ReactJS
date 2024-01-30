@@ -1,12 +1,13 @@
 import React from "react";
 import ShopSwiper from "../components/ShopSwiper";
+import { Link } from "react-router-dom";
 
 export default function Shop() {
   return (
     <>
       <div id="product" className=" flex flex-col pb-5 justify-between ">
         <div className="">
-          <h1 className=" text-center text-2xl sm:text-4xl font-archivo">
+          <h1 className=" text-center text-2xl mb-4 sm:text-4xl font-archivo">
             OUR PRODUCT
           </h1>
         </div>
@@ -18,7 +19,9 @@ export default function Shop() {
                 <span>SLIDE FOR MORE</span>
                 <span>OR</span>
                 <span className=" underline hover:text-gray-700 active:text-gray-600  rounded-lg px-2">
-                  <a href="">SEE MORE PRODUCT</a>
+                  <Link to="/error">
+                  SEE MORE PRODUCT
+                  </Link>
                 </span>
               </h1>
             </div>

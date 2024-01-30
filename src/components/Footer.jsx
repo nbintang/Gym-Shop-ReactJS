@@ -125,22 +125,26 @@ export default function Footer() {
 
   const iconList = [
     {
-      icon:<FaSquareFacebook/>
+      icon:<FaSquareFacebook/>,
+      url:"https://www.facebook.com/binyanglaper.binyanglaper/"
     },
     {
       icon: <FaXTwitter />,
+      url: "https://twitter.com/home"
     },
     {
       icon: <FaGithub />,
+      url:"https://github.com/"
     },
     {
-      icon: <SiGmail/>
+      icon: <SiGmail/>,
+      url: "https://www.google.com/intl/id/gmail/about/"
     }
   ];
   return (
     <>
       <footer id="footer" className="flex w-full   flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
-        <div className="flex justify-between gap-y-3 gap-x-2 sm:max-w-[500px] max-w-96 md:max-w-full w-full flex-wrap">
+        <div className="flex justify-between gap-y-3 gap-x-2 sm:max-w-[500px] max-w-80 md:max-w-full w-full flex-wrap">
           {footerList.map(({ title, list }) => {
             return (
               <>
@@ -172,20 +176,22 @@ export default function Footer() {
               required
             />
             <div className="">
-              <button className="p-3 bg-[#F5F5F5] text-black font-fira-sans uppercase rounded-sm">
+              <button className="p-3 bg-[#F5F5F5] font-archivo text-black font-extralight uppercase rounded-sm">
                 Subscribe
               </button>
             </div>
-            <div className="flex gap-2">
-              {iconList.map(({ icon }) => {
+            <div className="flex ">
+              <ul className="flex  gap-2">
+              {iconList.map(({ icon, url }) => {
                 return (
-                  <ul className="">
+                  
                     <li className="text-xl ">
-                      <a href="">{icon}</a>
+                      <a href={url}>{icon}</a>
                     </li>
-                  </ul>
+                  
                 )
               })}
+              </ul>
             </div>
           </div>
         </div>
