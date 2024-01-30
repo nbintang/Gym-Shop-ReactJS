@@ -34,7 +34,7 @@ export default () => {
       <SwiperSlide>
         <div
           className="bg-cover w-full h-screen bg-center"
-          style={{ backgroundImage: "url('assets/gif/gym.gif')" }}
+          style={{ backgroundImage: "url('assets/gif/home.jpg')" }}
         ></div>
       </SwiperSlide>
       <SwiperSlide>
