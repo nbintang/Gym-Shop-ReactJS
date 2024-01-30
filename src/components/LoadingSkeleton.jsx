@@ -6,7 +6,7 @@ import Skeleton from "./Skeleton";
 export default function LoadingSkeleton(){
   const [loading, setLoading] = useState(true);
 
-  const skeleton = useEffect(() => {
+useEffect(() => {
     setTimeout(() => {
       setLoading(false)
     }, 1000);

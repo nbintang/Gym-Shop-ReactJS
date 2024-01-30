@@ -6,13 +6,13 @@ export default function Support() {
       image: <img src="assets/img/brand/Air_Jordan-Logo.wine.svg" alt="" />,
     },
     {
-      image: <img src="assets/img/brand/Puma_(brand)-Logo.wine.svg"/>
+      image: <img src="assets/img/brand/Puma_(brand)-Logo.wine.svg" alt="" />
     },
     {
-      image: <img src="assets/img/brand/Hurley_International-Logo.wine.svg"/>
+      image: <img src="assets/img/brand/Hurley_International-Logo.wine.svg" alt=""/>
     },
     {
-      image: <img src= "assets/img/brand/Nike,_Inc.-Logo.wine.svg"/>,
+      image: <img src= "assets/img/brand/Nike,_Inc.-Logo.wine.svg" alt=""/>,
     },
   ];
   return (
