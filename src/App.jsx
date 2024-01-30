@@ -6,6 +6,7 @@ import Main from "./Main";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import Login from "./pages/Login";
 
 export default function App() {
   useEffect(() => {
@@ -18,6 +19,9 @@ export default function App() {
       <Switch>
         <Route exact path="/">
           <Main/>
+        </Route>
+        <Route path= "/login">
+          <Login/>
         </Route>
         <Route path="*">
           <Error/>

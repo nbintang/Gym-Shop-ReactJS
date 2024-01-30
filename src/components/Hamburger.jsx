@@ -5,15 +5,15 @@ import { faBars, faHamburger } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function Hamburger() {
-  const [ open, setOpen] = useState(false)
-  
+  const [open, setOpen] = useState(false);
+
   // useEffect(() => {
   //   setOpen(false);
   // }, [])
 
   const outsideClick = (e) => {
-    if(open && !e.target.closest(".navbar")) {
-      setOpen(false)
+    if (open && !e.target.closest(".navbar")) {
+      setOpen(false);
     }
   };
 
@@ -22,11 +22,11 @@ export default function Hamburger() {
   // };
 
   useEffect(() => {
-    document.addEventListener("click", outsideClick)
+    document.addEventListener("click", outsideClick);
     return () => {
-      document.removeEventListener('click', outsideClick)
+      document.removeEventListener("click", outsideClick);
     };
-  }, [open])
+  }, [open]);
 
   return (
     <>
@@ -45,12 +45,10 @@ export default function Hamburger() {
                 open ? "block" : "hidden"
               }`}
             >
-              <a
-                className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-                href="#home"
-              >
-                Login
-              </a>
+              
+                <Link to="/login">
+                  <p  className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100">Login</p>
+                </Link>
               <a
                 className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
                 href="#home"

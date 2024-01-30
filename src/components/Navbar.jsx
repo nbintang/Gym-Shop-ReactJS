@@ -30,7 +30,9 @@ export default function Navbar() {
             </Link>
             <Dropdown />
             <Hamburger />
+            <Link to="/login">
             <Button />
+            </Link>
           </div>
         </nav>
       </header>
