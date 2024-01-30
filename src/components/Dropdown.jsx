@@ -38,12 +38,6 @@ export default function HoverDropdown() {
             className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
             href="#home"
           >
-            Login
-          </a>
-          <a
-            className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100"
-            href="#home"
-          >
             Home
           </a>
           <a
