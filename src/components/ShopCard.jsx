@@ -9,10 +9,11 @@ export default function ShopCard() {
       <div
         className="men1 w-52 border bg-white  hover:bg-gray-100 hover:opacity-80 rounded active:bg-gray-200 shadow cursor-pointer"
         onMouseLeave={() => setRotate(false)}
+        onMouseOver={() => setRotate(true)}
       >
         <div
           className="image flex justify-center p-2"
-          onMouseOver={() => setRotate(true)}
+        
         >
           <div className="border">
             <img
