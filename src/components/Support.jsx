@@ -6,13 +6,15 @@ export default function Support() {
       image: <img src="assets/img/brand/Air_Jordan-Logo.wine.svg" alt="" />,
     },
     {
-      image: <img src="assets/img/brand/Puma_(brand)-Logo.wine.svg" alt="" />
+      image: <img src="assets/img/brand/Puma_(brand)-Logo.wine.svg" alt="" />,
     },
     {
-      image: <img src="assets/img/brand/Hurley_International-Logo.wine.svg" alt=""/>
+      image: (
+        <img src="assets/img/brand/Hurley_International-Logo.wine.svg" alt="" />
+      ),
     },
     {
-      image: <img src= "assets/img/brand/Nike,_Inc.-Logo.wine.svg" alt=""/>,
+      image: <img src="assets/img/brand/Nike,_Inc.-Logo.wine.svg" alt="" />,
     },
   ];
   return (
@@ -25,12 +27,14 @@ export default function Support() {
             </p>
           </div>
           <div
-            data-aos="fade-down"
             className="image flex justify-center gap-x-20 flex-wrap h-[500px] [&>*]: [&>*]: items-center w-full"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
           >
             {images.map(({ image }) => {
-              return <div className="w-40 md:w-52">{image}</div> 
-              
+              return <div className="w-40 md:w-52">{image}</div>;
             })}
           </div>
         </div>
