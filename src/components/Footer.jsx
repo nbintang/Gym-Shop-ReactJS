@@ -144,11 +144,11 @@ export default function Footer() {
   return (
     <>
       <footer id="footer" className="flex w-full   flex-col justify-center items-center bg-black text-white p-4 sm:text-sm">
-        <div className="flex justify-between gap-y-3 gap-x-2 sm:max-w-[500px] max-w-80 md:max-w-full w-full flex-wrap">
+        <div className="flex justify-between gap-y-3 gap-x-2 min-w-0 max-w-full w-full flex-wrap">
           {footerList.map(({ title, list }) => {
             return (
               <>
-                <ul className=" ">
+                <ul className="px-2 ">
                   <li className="sm:text-xl text-lg font-bold ">{title}</li>
                   <div className="space-y-3">
                   {list.map(({ title, href }) => {

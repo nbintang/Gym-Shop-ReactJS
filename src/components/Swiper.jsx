@@ -14,7 +14,7 @@ export default () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   const images = [
@@ -69,7 +69,7 @@ export default () => {
                 <img
                   src={image.title}
                   alt=""
-                  className="w-full  h-screen object-cover"
+                  className="w-full   h-screen object-cover"
                 />
               )}
             </SwiperSlide>

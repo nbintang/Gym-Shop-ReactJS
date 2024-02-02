@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <div id="home" className="w-full">
+      <div id="home" className="w-full min-w-0">
         <Swiper />
         <div className="absolute md:top-80 lg:top-96 text-[#EDF7FA] top-60 z-30  space-y-3 w-full text-center">
           <h1 className="text-5xl sm:text-8xl gap-3 justify-center font-archivo flex flex-wrap">
