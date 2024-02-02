@@ -18,7 +18,7 @@ export default function ShopCard() {
   return (
     <>
       <div
-        className="men1 w-52 border bg-white  hover:bg-gray-100 hover:opacity-80 rounded active:bg-gray-200 shadow cursor-pointer"
+        className="men1 w-52 border bg-white  hover:bg-gray-100 hover:opacity-100 rounded active:bg-gray-200 shadow cursor-pointer"
         onMouseLeave={() => setRotate(false)}
         onMouseOver={() => setRotate(true)}
       >
