@@ -30,7 +30,7 @@ export default () => {
     },
     {
       image: {
-        title: "assets/gif/running2.jpg",
+        title: "assets/gif/swim.gif",
       },
     },
     {
