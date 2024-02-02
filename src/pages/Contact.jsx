@@ -16,7 +16,7 @@ export default function Contact() {
       <div className=" bg-gradient-to-t from-gray-100 to-white h-[1000px]  flex items-center justify-center">
         <div id="contact" className="   font-fira-sans ">
           <div
-            className="  max-w-80 sm:max-w-96  md:max-w-full  rounded"
+            className=" p-3 max-w-80 sm:max-w-96  md:max-w-full  rounded"
             data-aos="fade-down"
           >
             <div className="w-full rounded  border-2  border-solid border-black">
@@ -33,7 +33,7 @@ export default function Contact() {
                     </div>
                     <div className=" rounded max-h-[500px] border p-2">
                       <div className=" h-[420px]  flex flex-col justify-between">
-                        <div className="flex gap-3  flex-col text-lg [&>input]:outline-none [&>*]:sm:text-lg  [&>*]:md:text-xl  [&>*]:text-md">
+                        <form className="flex gap-3  flex-col text-lg [&>input]:outline-none [&>*]:sm:text-lg  [&>*]:md:text-xl  [&>*]:text-md">
                           <label htmlFor="username">Username</label>
                           <input
                             className="bg-gray-50 border changed-placeholder outline-none rounded-sm  h-8  py-4"
@@ -63,7 +63,7 @@ export default function Contact() {
                             className=" p-4 w-full border outline-none rounded-sm bg-gray-50 h-32 max-h-32"
                             required
                           />
-                        </div>
+                        </form>
                         <div className="h-96 flex items-center">
                           <ul className=" flex w-full justify-around flex-wrap">
                             <Contactlogin />

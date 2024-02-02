@@ -19,8 +19,8 @@ export default function Search() {
 
         <span
           class={`input-group-text ${
-            open ? "" : "cursor-"
-          } hover:rounded-e-lg active:rounded-e-lg active:bg-gray-100 hover:bg-gray-50 transition-all flex cursor-pointer items-center whitespace-nowrap  px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200`}
+            open ? "active:rounded-e-lg hover:rounded-e-lg" : "rounded-full"
+          }   active:bg-gray-200 hover:bg-gray-50 transition-all flex cursor-pointer items-center whitespace-nowrap  px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200`}
           id="basic-addon2"
           onClick={() => setOpen(!open)}
         >

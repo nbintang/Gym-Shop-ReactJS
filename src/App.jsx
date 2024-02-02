@@ -26,6 +26,7 @@ export default function App() {
         <Route path="*">
           <Error/>
         </Route>
+        
       </Switch>
     </Router>
   );

@@ -23,13 +23,13 @@ export default function ShopCard() {
         onMouseOver={() => setRotate(true)}
       >
         <div className="image flex justify-center p-2">
-          <div className="border">
+          <div className="border max-w-96 overflow-hidden w-full">
             {shop.map(({ images }) => {
               return (
                 <img
                   src={images.image}
                   alt=""
-                  className={`h-36 w-36 object-cover {sm:h-56} rounded`}
+                  className={`h-36 hover:scale-125 scale-100 ease-in-out duration-200 w-full object-cover {sm:h-56} rounded`}
                 />
               );
             })}
@@ -57,7 +57,7 @@ export default function ShopCard() {
             <p className="font-semibold">Weight Lifting Shirt</p>
           </div>
           <div className="desc  font-fira-sans flex">
-            <p className="font-semibold">$31.99</p>
+            <p className="font-semibold border border-black rounded-sm px-2 bg-black text-white">$31.99</p>
           </div>
           <div></div>
         </div>
