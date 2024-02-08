@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function ShopCard() {
   const [rotate, setRotate] = useState(false);
@@ -56,8 +58,13 @@ export default function ShopCard() {
           <div className="desc  font-fira-sans flex text-wrap">
             <p className="font-semibold">Weight Lifting Shirt</p>
           </div>
-          <div className="desc  font-fira-sans flex">
+          <div className="desc  font-fira-sans flex justify-between items-center">
             <p className="font-semibold border border-black rounded-sm px-2 bg-black text-white">$31.99</p>
+            <Link to="dka">
+              <button className="">
+                <FaCartShopping className="text-xl"/>
+              </button>
+            </Link>
           </div>
           <div></div>
         </div>

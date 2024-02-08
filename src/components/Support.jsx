@@ -4,17 +4,19 @@ export default function Support() {
   const images = [
     {
       image: <img src="assets/img/brand/Air_Jordan-Logo.wine.svg" alt="" />,
+      duration : "200"
     },
     {
       image: <img src="assets/img/brand/Puma_(brand)-Logo.wine.svg" alt="" />,
+      duration : "300"
     },
     {
-      image: (
-        <img src="assets/img/brand/Hurley_International-Logo.wine.svg" alt="" />
-      ),
+      image: <img src="assets/img/brand/Hurley_International-Logo.wine.svg" alt="" />,
+      duration : "500"
     },
     {
       image: <img src="assets/img/brand/Nike,_Inc.-Logo.wine.svg" alt="" />,
+      duration : "700"
     },
   ];
   return (
@@ -28,13 +30,14 @@ export default function Support() {
           </div>
           <div
             className="image flex justify-center gap-x-20 flex-wrap h-[500px] [&>*]: [&>*]: items-center w-full"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0"
+         
           >
-            {images.map(({ image }) => {
-              return <div className="w-40 md:w-52">{image}</div>;
+            {images.map(({ image, duration }) => {
+              return <div className="w-40 md:w-52"
+              data-aos="fade-zoom-in"
+         
+              data-aos-delay={duration}
+>{image}</div>;
             })}
           </div>
         </div>
